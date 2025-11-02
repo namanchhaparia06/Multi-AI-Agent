@@ -10,7 +10,7 @@ uvicorn[standard]>=0.30
 streamlit>=1.39
 requests>=2.32
 
-# LangChain v0.3.x stack (pin these three to the SAME version!)
+# LangChain v0.3.x
 langchain==0.3.25
 langchain-core==0.3.25
 langchain-community==0.3.25
