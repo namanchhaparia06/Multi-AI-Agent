@@ -1,9 +1,21 @@
-langchain-groq
-langchain-community
-python-dotenv
-uvicorn
-fastapi
-pydantic
-streamlit
-langgraph
-langchain-tavily
+# Core
+pydantic>=2.7
+python-dotenv>=1.0.1
+
+# FastAPI backend
+fastapi>=0.115
+uvicorn[standard]>=0.30
+
+# Frontend
+streamlit>=1.39
+requests>=2.32
+
+# LangChain v0.3.x stack (pin these three to the SAME version!)
+langchain==0.3.25
+langchain-core==0.3.25
+langchain-community==0.3.25
+
+# Agents & tools
+langchain-groq>=0.1.7
+langchain-tavily>=0.2.0
+langgraph>=0.2.59
