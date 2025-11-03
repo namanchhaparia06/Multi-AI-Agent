@@ -1,6 +1,7 @@
-# Core
+# Core runtime
 pydantic>=2.7
 python-dotenv>=1.0.1
+requests>=2.32
 
 # FastAPI backend
 fastapi>=0.115
@@ -8,14 +9,16 @@ uvicorn[standard]>=0.30
 
 # Frontend
 streamlit>=1.39
-requests>=2.32
 
-# LangChain v0.3.x
-langchain==0.3.25
-langchain-core==0.3.25
-langchain-community==0.3.25
+# LangChain 0.3.x family — keep these aligned
+langchain==0.3.27
+langchain-core>=0.3.58,<1.0.0
+langchain-community==0.3.27
+langchain-text-splitters==0.3.*
 
-# Agents & tools
+# Agent graph (0.2.x line, supports create_react_agent)
+langgraph==0.2.62
+
+# Integrations
 langchain-groq>=0.1.7
 langchain-tavily>=0.2.0
-langgraph>=0.2.59
