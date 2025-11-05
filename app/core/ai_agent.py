@@ -16,8 +16,6 @@ ROLE_TO_MSG = {
 
 def _create_react_agent_with_prompt(model, tools, system_prompt: str):
     """
-    LangGraph 0.2.x had both `messages_modifier` and `state_modifier`
-    in different patch versions. Pick what's available.
     """
     params = inspect.signature(create_react_agent).parameters
     if "state_modifier" in params:
